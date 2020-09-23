@@ -1,2 +1,2 @@
 # pw-2020qs-aulas
-Códigos de aula.
+Códigos desenvolvidos nas aulas.
