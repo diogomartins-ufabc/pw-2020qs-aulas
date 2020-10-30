@@ -1,0 +1,32 @@
+:root {
+    --custom-border: 1px solid gray;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+}
+
+th {
+    border-top: var(--custom-border);
+    border-bottom: var(--custom-border);
+}
+
+tr td:first-child {
+    border-right: var(--custom-border);
+    font-weight: bold;
+}
+
+tr:last-child {
+    border-bottom: var(--custom-border);
+}
+
+tr:nth-child(even) {
+    background-color: lightsteelblue;
+}

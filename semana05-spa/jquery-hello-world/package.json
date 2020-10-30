@@ -1,0 +1,17 @@
+{
+  "name": "jquery-hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diogo SM",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jquery": "^3.5.1",
+    "jquery": "^3.5.1",
+    "ts-loader": "^8.0.7",
+    "typescript": "^4.0.5"
+  }
+}

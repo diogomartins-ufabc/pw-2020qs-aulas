@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th>World</th>
+        </tr>
+        <tr>
+            <td>Confirmed</td>
+            <td id="confirmed"></td>
+        </tr>
+        <tr>
+            <td>New confirmed</td>
+            <td id="new-confirmed"></td>
+        </tr>
+        <tr>
+            <td>Deaths</td>
+            <td id="deaths"></td>
+        </tr>
+        <tr>
+            <td>New deaths</td>
+            <td id="new-deaths"></td>
+        </tr>
+        <tr>
+            <td>Recovered</td>
+            <td id="recovered"></td>
+        </tr>
+        <tr>
+            <td>New recovered</td>
+            <td id="new-recovered"></td>
+        </tr>
+        <caption>
+            Last updated: <span id="last-updated"></span>
+            <br>
+            Source: Johns Hopkins CSSE
+        </caption>
+    </table>
+    <script src="dist/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flickr public photos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="dist/index.js"></script>
+    <script src="https://www.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=loadPhotos&tags=dog"></script>
+</head>
+<body>
+    <main>
+        <p id="title"></p>
+        <p>Last updated: <span id="date"></span></p>
+        <div class="photos"></div>
+    </main>
+</body>
+</html>
