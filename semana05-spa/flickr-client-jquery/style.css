@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 10px;
+}
+
+.search-area {
+    margin-bottom: 30px;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+
+#title {
+    font-weight: bold;
+}
+
+#date {
+    font-style: italic;
+}

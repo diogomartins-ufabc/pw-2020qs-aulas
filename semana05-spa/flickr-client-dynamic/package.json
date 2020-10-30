@@ -1,0 +1,11 @@
+{
+  "name": "flickr-client-dynamic",
+  "version": "1.0.0",
+  "description": "Simple Flickr client with dynamic JSON-P",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diogo SM",
+  "license": "ISC"
+}
