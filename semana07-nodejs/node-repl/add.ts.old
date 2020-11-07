@@ -1,0 +1,11 @@
+const promptLib = require('prompt');
+
+promptLib.start();
+
+promptLib.get(['a', 'b'], function (err, result) {
+    if (err) {
+        consolee.log(err);
+        return 1;
+    }
+    console.log(Number.parseInt(result.a) + Number.parseInt(result.b));        
+});
