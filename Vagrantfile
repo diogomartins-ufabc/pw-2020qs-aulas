@@ -3,14 +3,16 @@ Vagrant::Config.run do |config|
 
   config.vm.forward_port 3000, 3000
 
-  config.vm.share_folder "apps", "/home/vagrant/apps", "apps", SharedFoldersEnableSymlinksCreate: false  
+  config.vm.share_folder "apps", "/home/vagrant/apps", "apps", SharedFoldersEnableSymlinksCreate: true  
 
   config.vm.provision :shell, :inline => "sudo apt-get update && sudo apt-get -y upgrade"
   config.vm.provision :shell, :inline => "sudo apt-get install -y build-essential libssl-dev --no-install-recommends"
-  config.vm.provision :shell, :inline => "curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -"
+  config.vm.provision :shell, :inline => "curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -"
   config.vm.provision :shell, :inline => "sudo apt-get update"
   config.vm.provision :shell, :inline => "sudo apt-get install -y nodejs"
   config.vm.provision :shell, :inline => "sudo npm install -g nodemon"
+  config.vm.provision :shell, :inline => "sudo npm install -g ts-node typescript"
+  config.vm.provision :shell, :inline => "sudo npm install -g webpack webpack-cli"
   config.vm.provision :shell, :inline => "sudo apt install -y redis-server"
   config.vm.provision :shell, :inline => "wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -"
   config.vm.provision :shell, :inline => "sudo apt install -y gnupg"
