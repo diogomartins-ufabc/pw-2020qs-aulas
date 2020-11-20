@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello form</title>
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/static/hello-form-async.js"></script>
+</head>
+<body>
+    <!-- <form action="/saymyname" method="GET"> -->
+    <form action="/saymyname" method="POST">
+        <input type="text" name="fname" id="fname" placeholder="First name" required>
+        <input type="text" name="lname" id="lname" placeholder="Last name" required>
+        <input type="submit">
+    </form>
+    <div id="message-area">
+
+    </div>
+</body>
+</html>
