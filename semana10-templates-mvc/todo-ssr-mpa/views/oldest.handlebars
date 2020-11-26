@@ -1,0 +1,13 @@
+<div class="tabs">
+    <a href="/newest"><span id="newest">Newest</span></a>
+    <a href="/oldest"><span class="active" id="oldest">Oldest</span></a>
+    <a href="/tags"><span id="tags">Tags</span></a>
+    <a href="/add"><span id="add">Add</span></a>
+</div>
+<div class="content">
+    <ul>
+        {{#each todos as |todo|}}
+            <li>{{todo}}</li>
+        {{/each}}
+    </ul>
+</div>

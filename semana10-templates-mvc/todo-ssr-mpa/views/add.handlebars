@@ -1,0 +1,18 @@
+<div class="tabs">
+    <a href="/newest"><span id="newest">Newest</span></a>
+    <a href="/oldest"><span id="oldest">Oldest</span></a>
+    <a href="/tags"><span id="tags">Tags</span></a>
+    <a href="/add"><span class="active" id="add">Add</span></a>
+</div>
+<div class="content">
+    <form action="/add" method="post">
+        <label for="description">Description: </label>
+        <input type="text" name="description" class="description" required>
+
+        <label for="tags">Tags: </label>
+        <input type="text" name="tags" class="tags" required 
+            placeholder="tag1, tag2, tag3">
+
+        <input type="submit" value="+">
+    </form>
+</div>
