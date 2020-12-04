@@ -2,6 +2,7 @@ import * as fs from "fs"
 import {config} from "./config"
 
 export interface ToDo {
+    'id': number,
     'description': string,
     'tags': string[]
 }

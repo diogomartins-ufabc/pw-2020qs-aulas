@@ -59,16 +59,23 @@ app.get("/add", (req, res) => {
 })
 
 app.post("/add", (req, res) => {
-    const isDataValid = () => 
+    const isValid = () => 
         "description" in req.body
         && "tags" in req.body
         && req.body.description.trim().length > 0
         && req.body.tags.trim().length > 0
+    
+    const nextId = () => (todo.model.length > 0) 
+        ? todo.model[todo.model.length - 1].id + 1 
+        : 1
 
-    if (isDataValid()) {
+    if (isValid()) {
         const newToDo: todo.ToDo = {
-            "description": req.body.description,
-            "tags": req.body.tags.split(",").map((tag: string) => tag.trim())
+            id: nextId(),
+            description: req.body.description,
+            tags: req.body.tags.split(",")
+                .map((tag: string) => tag.trim())
+                .filter((tag: string) => tag.length > 0)
         }
 
         todo.model.push(newToDo)
